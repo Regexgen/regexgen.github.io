@@ -48,8 +48,47 @@ $(document).ready(function() {
 		start2();
 	});
 	
-	function start2() {
-		var text = $('.input2').val();	
+	function start1() {
+		var text = $('.input2').val();
+		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
+		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
+		text = text.replace(/(a)/gi,"[<span class='lat'>a</span><span class='cyr'>а</span>]");
+		text = text.replace(/(b)/gi,"[<span class='lat'>b</span><span class='cyr'>б</span><span class='nam'>6</span>]");
+		text = text.replace(/(c)/gi,"[<span class='lat'>cs</span><span class='cyr'>с</span>]");
+		text = text.replace(/(d)/gi,"[<span class='lat'>d</span><span class='cyr'>д</span>]");
+		text = text.replace(/(e)/gi,"[<span class='lat'>e</span><span class='cyr'>е</span>]");
+		text = text.replace(/(f)/gi,"[<span class='lat'>f</span><span class='cyr'>ф</span>]");
+		text = text.replace(/(g)/gi,"[<span class='lat'>g</span><span class='cyr'>г</span>]");
+		text = text.replace(/(h)/gi,"[<span class='lat'>h</span><span class='cyr'>хн</span>]");
+		text = text.replace(/(i)/gi,"[<span class='lat'>iu</span><span class='cyr'>и</span>]");
+		text = text.replace(/(j)/gi,"[<span class='lat'>j</span><span class='cyr'>ж</span>]");
+		text = text.replace(/(k)/gi,"[<span class='lat'>k</span><span class='cyr'>к</span>]");
+		text = text.replace(/(l)/gi,"[<span class='lat'>l</span><span class='cyr'>л</span>]");
+		text = text.replace(/(m)/gi,"[<span class='lat'>m</span><span class='cyr'>м</span>]");
+		text = text.replace(/(n)/gi,"[<span class='lat'>nh</span><span class='cyr'>н</span>]");
+		text = text.replace(/(o)/gi,"[<span class='lat'>o</span><span class='cyr'>о</span><span class='nam'>0</span>]");
+		text = text.replace(/(p)/gi,"[<span class='lat'>p</span><span class='cyr'>рп</span>]");
+		text = text.replace(/(q)/gi,"<span class='lat'>q</span>");
+		text = text.replace(/(r)/gi,"[<span class='lat'>r</span><span class='cyr'>гр</span>]");
+		text = text.replace(/(s)/gi,"[<span class='lat'>s</span><span class='cyr'>с</span>]");
+		text = text.replace(/(t)/gi,"[<span class='lat'>t</span><span class='cyr'>т</span>]");
+		text = text.replace(/(u)/gi,"[<span class='lat'>u</span><span class='cyr'>и</span>]");
+		text = text.replace(/(v)/gi,"<span class='lat'>v</span><span class='cyr'>в</span>]");
+		text = text.replace(/(w)/gi,"<span class='lat'>w</span><span class='cyr'>в</span>]");
+		text = text.replace(/(x)/gi,"[<span class='lat'>xh</span><span class='cyr'>х</span>]");
+		text = text.replace(/(y)/gi,"[<span class='lat'>y</span><span class='cyr'>у</span>]");
+		text = text.replace(/(z)/gi,"[<span class='lat'>z</span><span class='cyr'>з</span><span class='nam'>3</span>]");
+		$('.output2').html(text);
+	}	
+	start2();
+});
+$(document).ready(function() {
+	$('.input3').on('keyup', function(){
+		start3();
+	});
+	
+	function start3() {
+		var text = $('.input3').val();	
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
@@ -58,7 +97,7 @@ $(document).ready(function() {
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
 		text = text.replace(/\)/gi,"<span class='fo'>)</span>");
-		$('.output2').html(text);
+		$('.output3').html(text);
 	}	
-	start2();
+	start3();
 });
