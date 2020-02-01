@@ -1,0 +1,51 @@
+body {
+	font-family: Tahoma;
+}
+
+h1 {
+	font-size: 15px;
+}
+.container {
+	width: 500px;
+	margin: 0 auto;
+}
+.rules {
+	margin: 0 10px;
+	float: left;
+	width: 75px;
+}
+.input {
+	width: 100%;
+	height: 100px;
+}
+.output {
+	margin-top: 10px;
+}
+.input2 {
+	width: 100%;
+	height: 200px;
+}
+.output2 {
+	margin-top: 10px;
+}
+.lat {
+	color: red;
+}
+.cyr {
+	color: green;
+}
+.nam {
+	color: #00BFFF;
+}
+.one {
+    background-color: #ffec82;
+}
+.two {
+    background-color: #c9c9c9;
+}
+.tri {  
+	background-color: #b104ff;
+}
+.fo {  
+	background-color: #296dc3;
+}

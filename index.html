@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Генератор регулярок</title> 
+		<meta name="description" content="Страничка поможет сгенерировать регулярку"/>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<link rel="shortcut icon" type="image/png" 
+      		href="{{ "/gen/favicon.png"  | absolute_url }}">
+		<link rel="stylesheet" href="/gen/style.css" type="text/css" />
+		<script src="/gen/jquery.min.js"></script>
+		<script src="/gen/scripts.js?ver=1.0.1"></script>
+		<script src = "/gen/clipboard.min.js"></script>
+
+	</head>
+	<body>
+		<div class="rules">
+		<h1>Правила</h1>
+		а - [<span class='cyr'>а</span><span class='lat'>a</span>]</br>
+		б - [<span class='cyr'>б</span><span class='lat'>b</span><span class='nam'>6</span>]</br>
+		в - [<span class='cyr'>в</span><span class='lat'>b</span>]</br>
+		г - [<span class='cyr'>г</span><span class='lat'>r</span>]</br>
+		д - [<span class='cyr'>д</span><span class='lat'>d</span>]</br>
+		е - [<span class='cyr'>е</span><span class='lat'>e</span>]</br>
+		ж - [<span class='cyr'>ж</span><span class='lat'>j</span>]</br>
+		з - [<span class='cyr'>з</span><span class='nam'>3</span>]</br>
+		и - [<span class='cyr'>и</span><span class='lat'>ui</span>]</br>
+		й - [<span class='cyr'>йи</span><span class='lat'>u</span>]</br>
+		к - [<span class='cyr'>к</span><span class='lat'>k</span>]</br>
+		л - [<span class='cyr'>л</span><span class='lat'>l</span>]</br>
+		м - [<span class='cyr'>м</span><span class='lat'>m</span>]</br>
+		н - [<span class='cyr'>н</span><span class='lat'>hn</span>]</br>
+		о - [<span class='cyr'>о</span><span class='lat'>o</span><span class='nam'>0</span>]</br>
+		п - [<span class='cyr'>п</span><span class='lat'>n</span>]</br>
+		р - [<span class='cyr'>р</span><span class='lat'>p</span>]</br>
+		с - [<span class='cyr'>с</span><span class='lat'>cs</span>]</br>
+		т - [<span class='cyr'>т</span><span class='lat'>t</span>]</br>
+		у - [<span class='cyr'>у</span><span class='lat'>y</span>]</br>
+		ф - <span class='cyr'>ф</span></br>
+		х - [<span class='cyr'>х</span><span class='lat'>x</span>]</br>
+		ц - [<span class='cyr'>ц</span><span class='lat'>u</span>]</br>
+		ч - <span class='cyr'>ч</span></br>
+		ш - <span class='cyr'>ш</span></br>
+		щ - <span class='cyr'>щ</span></br>
+		ъ - <span class='cyr'>ъ</span></br>
+		ы - (<span class='cyr'>ы</span>|<span class='lat'>bi</span>)</br>
+		ь - [<span class='cyr'>ь</span><span class='lat'>b</span>]</br>
+		э - [<span class='cyr'>эе</span><span class='lat'>e</span>]</br>
+		ю - (<span class='cyr'>ю</span>|<span class='lat'>io</span>)</br>
+		я - <span class='cyr'>я</span>
+		</div>
+		<div class="container">
+			<h1><span class="lat">Латиница</span> & <span class="cyr">Кириллица</span> & <span class="nam">Цифры</span></h1>
+			<textarea class="input" >Пример отличного текста</textarea>
+			<div class="output" id="out"></div>
+			</br>
+			<p style="text-align: center"><input type="button" class="clipboard" name="btnCopy" value="Копировать в буфер обмена" data-clipboard-target="#out" ></p>
+		</div>
+		</br>
+		<div class="container">
+			<h1>Подсветка регулярки</h1>
+			<textarea class="input2" >^(?!.*([гr][лl][оo0][бb6]|glob)).*(?=.*\y([бb6][оo0][нhn][дd]|bond)).*$</textarea>
+			<div class="output2" id="out2"></div>
+			</br>
+			<p style="text-align: center"><input type="button" class="clipboard" name="btnCopy" value="Копировать в буфер обмена" data-clipboard-target="#out2" ></p>
+		</div>
+		
+<script>
+	new Clipboard('.clipboard');
+	function clearAll(){
+		document.form1.in.value="";
+		document.form1.out.value="";
+	}
+	function clearOut(){
+		document.form1.out.value="";
+	}
+</script>
+
+
+</html>
