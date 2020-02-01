@@ -48,7 +48,7 @@ $(document).ready(function() {
 		start2();
 	});
 	
-	function start1() {
+	function start2() {
 		var text = $('.input2').val();
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
