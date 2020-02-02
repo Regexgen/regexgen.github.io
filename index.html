@@ -49,7 +49,7 @@
 		ю - (<span class='cyr'>ю</span>|<span class='lat'>io</span>)</br>
 		я - <span class='cyr'>я</span>
 		</div>
-<div class="spoiler">
+		<div class="rules2">
 		<h1>Rules <span class='lat'>Lat</span>➜<span class='cyr'>Cyr</span></h1>
 		a - [<span class='lat'>a</span><span class='cyr'>а</span>]</br>
 		b - [<span class='lat'>b</span><span class='cyr'>б</span><span class='nam'>6</span>]</br>
@@ -95,7 +95,7 @@
 		</br>
 		<div class="container">
 			<h1>Подсветка регулярки</h1>
-			<textarea class="input3" >^(?!.*([гr][лl][оo0][бb6]|glob)).*(?=.*\y([бb6][оo0][нhn][дd]|bond)).*$</textarea>
+			<textarea class="input3" >^(?!.*([гr][лl][оo0][бb6]|glob)).*(?=.*\y([бb6][оo0][нhn][дd]( )?|bond)).*$</textarea>
 			<div class="output3" id="out3"></div>
 			</br>
 			<p style="text-align: center"><input type="button" class="clipboard" name="btnCopy" value="Копировать в буфер обмена" data-clipboard-target="#out3" ></p>
@@ -110,5 +110,4 @@
 		document.form1.out.value="";
 	}
 </script>
-
 </html>
