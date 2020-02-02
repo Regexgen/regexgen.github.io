@@ -95,6 +95,7 @@ $(document).ready(function() {
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\?\=\.\*)/gi,"<span class='one'>$1</span>");
+		text = text.replace(/( )/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(\?\!\.\*)/gi,"<span class='two'>$1</span>");
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
