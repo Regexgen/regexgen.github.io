@@ -11,6 +11,7 @@ $(document).ready(function() {
 		text = text.replace(/(г)/gi,"[гr]");
 		text = text.replace(/(д)/gi,"[дd]");
 		text = text.replace(/(е)/gi,"[еe]");
+		text = text.replace(/(ё)/gi,"[<span class='cyr'>ё$1</span>еe]");
 		text = text.replace(/(ж)/gi,"[жj]");
 		text = text.replace(/(з)/gi,"[з3]");
 		text = text.replace(/(и)/gi,"[иui]");
