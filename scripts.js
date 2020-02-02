@@ -5,6 +5,7 @@ $(document).ready(function() {
 	
 	function start1() {
 		var text = $('.input').val();
+		text = text.replace(/( )/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(а)/gi,"[аa]");
 		text = text.replace(/(б)/gi,"[бb6]");
 		text = text.replace(/(в)/gi,"[вb]");
@@ -51,6 +52,7 @@ $(document).ready(function() {
 	
 	function start2() {
 		var text = $('.input2').val();
+		text = text.replace(/( )/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(a)/gi,"[aа]");
 		text = text.replace(/(b)/gi,"[bбь6]");
 		text = text.replace(/(s)/gi,"[sс]");
