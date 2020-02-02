@@ -11,7 +11,7 @@ $(document).ready(function() {
 		text = text.replace(/(г)/gi,"[гr]");
 		text = text.replace(/(д)/gi,"[дd]");
 		text = text.replace(/(е)/gi,"[еe]");
-		text = text.replace(/(ё)/gi,"[<span class='cyr'>ё$1</span>еe]");
+		text = text.replace(/(ё)/gi,"[ёеe]");
 		text = text.replace(/(ж)/gi,"[жj]");
 		text = text.replace(/(з)/gi,"[з3]");
 		text = text.replace(/(и)/gi,"[иui]");
@@ -39,7 +39,7 @@ $(document).ready(function() {
 		text = text.replace(/(ю)/gi,"(ю|io)");
 		text = text.replace(/(я)/gi,"я");
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
-		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
+		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
 		$('.output').html(text);
@@ -80,7 +80,7 @@ $(document).ready(function() {
 		text = text.replace(/(y)/gi,"[yу]");
 		text = text.replace(/(z)/gi,"[zз3]");
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
-		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
+		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
 		$('.output2').html(text);
@@ -95,7 +95,7 @@ $(document).ready(function() {
 	function start3() {
 		var text = $('.input3').val();
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
-		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
+		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\?\=\.\*)/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(\?\!\.\*)/gi,"<span class='two'>$1</span>");
