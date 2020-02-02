@@ -58,6 +58,7 @@ $(document).ready(function() {
 		text = text.replace(/(f)/gi,"[fф]");
 		text = text.replace(/(g)/gi,"[gг]");
 		text = text.replace(/(h)/gi,"[hхн]");
+		text = text.replace(/(u)/gi,"[uи]");
 		text = text.replace(/(i)/gi,"[iuи]");
 		text = text.replace(/(j)/gi,"[jж]");
 		text = text.replace(/(k)/gi,"[kк]");
@@ -70,7 +71,6 @@ $(document).ready(function() {
 		text = text.replace(/(r)/gi,"[rгр]");
 		text = text.replace(/(s)/gi,"[sс]");
 		text = text.replace(/(t)/gi,"[tт]");
-		text = text.replace(/(u)/gi,"[uи]");
 		text = text.replace(/(v)/gi,"[vв]");
 		text = text.replace(/(w)/gi,"[wв]");
 		text = text.replace(/(x)/gi,"[xhх]");
