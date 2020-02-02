@@ -73,8 +73,8 @@ $(document).ready(function() {
 		text = text.replace(/(s)/i,"[<span class='lat'>s</span><span class='cyr'>с</span>]");
 		text = text.replace(/(t)/i,"[<span class='lat'>t</span><span class='cyr'>т</span>]");
 		text = text.replace(/(u)/i,"[<span class='lat'>u</span><span class='cyr'>и</span>]");
-		text = text.replace(/(v)/i,"<span class='lat'>v</span><span class='cyr'>в</span>]");
-		text = text.replace(/(w)/i,"<span class='lat'>w</span><span class='cyr'>в</span>]");
+		text = text.replace(/(v)/i,"[<span class='lat'>v</span><span class='cyr'>в</span>]");
+		text = text.replace(/(w)/i,"[<span class='lat'>w</span><span class='cyr'>в</span>]");
 		text = text.replace(/(x)/i,"[<span class='lat'>xh</span><span class='cyr'>х</span>]");
 		text = text.replace(/(y)/i,"[<span class='lat'>y</span><span class='cyr'>у</span>]");
 		text = text.replace(/(z)/i,"[<span class='lat'>z</span><span class='cyr'>з</span><span class='nam'>3</span>]");
