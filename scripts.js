@@ -90,12 +90,12 @@ $(document).ready(function() {
 	});
 	
 	function start3() {
-		var text = $('.input3').val();	
+		var text = $('.input3').val();
+		text = text.replace(/( )/gi,"<span class='one'>$1</span>");
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\?\=\.\*)/gi,"<span class='one'>$1</span>");
-		text = text.replace(/( )/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(\?\!\.\*)/gi,"<span class='two'>$1</span>");
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
