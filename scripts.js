@@ -5,7 +5,6 @@ $(document).ready(function() {
 	
 	function start1() {
 		var text = $('.input').val();
-		text = text.replace(/(\s)/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(а)/gi,"[аa]");
 		text = text.replace(/(б)/gi,"[бb6]");
 		text = text.replace(/(в)/gi,"[вb]");
@@ -41,6 +40,7 @@ $(document).ready(function() {
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
+		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
 		$('.output').html(text);
 	}	
 	start1();
@@ -52,7 +52,6 @@ $(document).ready(function() {
 	
 	function start2() {
 		var text = $('.input2').val();
-		text = text.replace(/(\s)/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(a)/gi,"[aа]");
 		text = text.replace(/(b)/gi,"[bбь6]");
 		text = text.replace(/(s)/gi,"[sс]");
@@ -82,6 +81,7 @@ $(document).ready(function() {
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
+		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
 		$('.output2').html(text);
 	}	
 	start2();
@@ -93,7 +93,6 @@ $(document).ready(function() {
 	
 	function start3() {
 		var text = $('.input3').val();
-		text = text.replace(/(\s)/gi,"<span class='one'>$1</span>");
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Я])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
@@ -102,6 +101,7 @@ $(document).ready(function() {
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
 		text = text.replace(/\)/gi,"<span class='fo'>)</span>");
+		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
 		$('.output3').html(text);
 	}	
 	start3();
