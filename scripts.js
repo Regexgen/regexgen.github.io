@@ -128,16 +128,16 @@ $(document).ready(function() {
 	
 	function start4() {
 		var text = $('.input4').val();
-		text = text.replace(/(а(?!\]))/gi,"[аa]");
-		text = text.replace(/(б(?!\]))/gi,"[бb6]");
-		text = text.replace(/(в(?!\]))/gi,"[вb]");
+		text = text.replace(/(а(?!\]))/giy,"[аa]");
+		text = text.replace(/(б(?!\]))/giy,"[бb6]");
+		text = text.replace(/(в(?!\]))/giy,"[вb]");
 		text = text.replace(/(г(?!\]))/gi,"[гr]");
 		text = text.replace(/(д(?!\]))/gi,"[дd]");
 		text = text.replace(/(е(?!\]))/gi,"[еe]");
 		text = text.replace(/(ё(?!\]))/gi,"[ёеe]");
 		text = text.replace(/(ж(?!\]))/gi,"[жj]");
 		text = text.replace(/(з(?!\]))/gi,"[з3]");
-		text = text.replace(/(и(?!\]))/gi,"[иui]");
+		text = text.replace(/(и(?!\]))/giy,"[иui]");
 		text = text.replace(/(й(?!\]))/gi,"[йиu]");
 		text = text.replace(/(к(?!\]))/gi,"[кk]");
 		text = text.replace(/(л(?!\]))/gi,"[лl]");
