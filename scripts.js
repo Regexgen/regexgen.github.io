@@ -48,6 +48,7 @@ $(document).ready(function() {
 		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
 		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
+		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>($1)?</span>");
 		$('.output').html(text);
 	}	
 	start1();
