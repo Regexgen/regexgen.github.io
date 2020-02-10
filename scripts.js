@@ -198,6 +198,7 @@ $(document).ready(function() {
 		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>($1)?</span>");
+		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		$('.output4').html(text);
 	}	
 	start4();
