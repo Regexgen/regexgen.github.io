@@ -38,17 +38,18 @@ $(document).ready(function() {
 		text = text.replace(/(э)/gi,"[эеe]");
 		text = text.replace(/(ю)/gi,"(ю|io)");
 		text = text.replace(/(я)/gi,"я");
-		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
-		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
-		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
-		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
-		text = text.replace(/(0(?!class\=))/gi,"[0оo]");
+		text = text.replace(/(0(?!\]))/gi,"[0оo]");
 		text = text.replace(/(1(?!class\=))/gi,"[1i]");
 		text = text.replace(/(2(?!class\=))/gi,"[2z]");
 		text = text.replace(/(3(?!class\=))/gi,"[3з]");
 		text = text.replace(/(5(?!class\=))/gi,"[5s]");
 		text = text.replace(/(6(?!class\=))/gi,"[6бb]");
 		text = text.replace(/(8(?!class\=))/gi,"[8вb]");
+		text = text.replace(/([A-Z])/gi,"<span class='lat'>$1</span>");
+		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
+		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
+		text = text.replace(/(\s(?!class\=))/gi,"<span class='one'>$1</span>");
+
 		$('.output').html(text);
 	}	
 	start1();
