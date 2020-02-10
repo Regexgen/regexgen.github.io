@@ -162,7 +162,7 @@ $(document).ready(function() {
 		text = text.replace(/(ю(?!\]))/gi,"(ю|io)");
 		text = text.replace(/(я(?!\]))/gi,"я");
 		text = text.replace(/(a(?!\]))/gi,"[aа]");
-		text = text.replace(/(b(?!6\]|i\)))/gi,"[bбь6]");
+		text = text.replace(/(b(?!6\]|i\)|\)|\]))/gi,"[bбь6]");
 		text = text.replace(/(s(?!\]))/gi,"[sс]");
 		text = text.replace(/(c(?!s\]))/gi,"[csс]");
 		text = text.replace(/(d(?!\]))/gi,"[dд]");
@@ -170,7 +170,7 @@ $(document).ready(function() {
 		text = text.replace(/(f(?!\]))/gi,"[fф]");
 		text = text.replace(/(g(?!\]))/gi,"[gг]");
 		text = text.replace(/(h(?!n\]))/gi,"[hхн]");
-		text = text.replace(/(u(?!u\]))/gi,"[uи]");
+		text = text.replace(/(u(?!\]|i\]))/gi,"[uи]");
 		text = text.replace(/(i(?!\]|\)|o\)))/gi,"[iuи]");
 		text = text.replace(/(j(?!\]))/gi,"[jж]");
 		text = text.replace(/(k(?!\]))/gi,"[kк]");
