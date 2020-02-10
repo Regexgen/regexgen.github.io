@@ -6,45 +6,27 @@ h1 {
 	font-size: 15px;
 }
 .container {
-	width: 750px;
+	width: 700px;
 	margin: 0 auto;
 }
 .rules {
-    float: left; /* Обтекание врезки по правому краю */
-    width: 100px; /* Ширина врезки */
-    background: #fc0; /* Цвет фона */
-    padding: 5px; /* Поля вокруг картинки */
-    margin: 5px 10px 5px 0; /* Отступы вокруг рисунка */
-    border: 1px solid #333; /* Параметры рамки */
-   }
-.rules2 {
-    float: right; /* Обтекание врезки по правому краю */
-    width: 100px; /* Ширина врезки */
-    background: #fc0; /* Цвет фона */
-    padding: 5px; /* Поля вокруг картинки */
-    margin: 5px 10px 5px 0; /* Отступы вокруг рисунка */
-    border: 1px solid #333; /* Параметры рамки */
-   }
-/*.rules {
-	margin: 0 10px;
 	float: left;
 	width: 75px;
 }
 .rules2 {
-	margin: 0 10px;
 	float: right;
 	width: 75px;
-}*/
+}
 .input {
 	width: 100%;
-	height: 40px;
+	height: 50px;
 }
 .output {
 	margin-top: 10px;
 }
 .input2 {
 	width: 100%;
-	height: 40px;
+	height: 50px;
 }
 .output2 {
 	margin-top: 10px;
@@ -66,10 +48,10 @@ h1 {
 	color: #00BFFF;
 }
 .one {
-    background-color: #ffec82;
+	background-color: #ffec82;
 }
 .two {
-    background-color: #c9c9c9;
+	background-color: #c9c9c9;
 }
 .tri {  
 	background-color: #b104ff;
