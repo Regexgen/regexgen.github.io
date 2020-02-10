@@ -129,7 +129,7 @@ $(document).ready(function() {
 	function start4() {
 		var text = $('.input4').val();
 		text = text.replace(/(а(?!\]))/gi,"[аa]");
-		text = text.replace(/(б(?!6))/gi,"[бb6]");
+		text = text.replace(/(б(?!6\]))/gi,"[бb6]");
 		text = text.replace(/(в(?!\]))/gi,"[вb]");
 		text = text.replace(/(г(?!\]))/gi,"[гr]");
 		text = text.replace(/(д(?!\]))/gi,"[дd]");
@@ -161,13 +161,6 @@ $(document).ready(function() {
 		text = text.replace(/(э(?!\]))/gi,"[эеe]");
 		text = text.replace(/(ю(?!\]))/gi,"(ю|io)");
 		text = text.replace(/(я(?!\]))/gi,"я");
-		text = text.replace(/(0(?!\]))/gi,"[0оo]");
-		text = text.replace(/(1(?!\]))/gi,"[1i]");
-		text = text.replace(/(2(?!\]))/gi,"[2z]");
-		text = text.replace(/(3(?!\]))/gi,"[3з]");
-		text = text.replace(/(5(?!\]))/gi,"[5s]");
-		text = text.replace(/(6(?!\]))/gi,"[6бb]");
-		text = text.replace(/(8(?!\]))/gi,"[8вb]");
 		text = text.replace(/(a(?!\]))/gi,"[aа]");
 		text = text.replace(/(b(?!\]))/gi,"[bбь6]");
 		text = text.replace(/(s(?!\]))/gi,"[sс]");
@@ -177,14 +170,14 @@ $(document).ready(function() {
 		text = text.replace(/(f(?!\]))/gi,"[fф]");
 		text = text.replace(/(g(?!\]))/gi,"[gг]");
 		text = text.replace(/(h(?!\]))/gi,"[hхн]");
-		text = text.replace(/(u(?!\]))/gi,"[uи]");
+		text = text.replace(/(u(?!i\]))/gi,"[uи]");
 		text = text.replace(/(i(?!\]))/gi,"[iuи]");
 		text = text.replace(/(j(?!\]))/gi,"[jж]");
 		text = text.replace(/(k(?!\]))/gi,"[kк]");
 		text = text.replace(/(l(?!\]))/gi,"[lл]");
 		text = text.replace(/(m(?!\]))/gi,"[mм]");
 		text = text.replace(/(n(?!\]))/gi,"[nhн]");
-		text = text.replace(/(o(?!\]))/gi,"[oо0]");
+		text = text.replace(/(o(?!о0\]))/gi,"[oо0]");
 		text = text.replace(/(p(?!\]))/gi,"[pрп]");
 		text = text.replace(/(q(?!\]))/gi,"q");
 		text = text.replace(/(r(?!\]))/gi,"[rгр]");
@@ -194,7 +187,7 @@ $(document).ready(function() {
 		text = text.replace(/(x(?!\]))/gi,"[xhх]");
 		text = text.replace(/(y(?!\]))/gi,"[yу]");
 		text = text.replace(/(z(?!\]))/gi,"[zз3]");
-		text = text.replace(/(0(?!\]))/gi,"[0оo]");
+		text = text.replace(/(0(?!оo\]))/gi,"[0оo]");
 		text = text.replace(/(1(?!\]))/gi,"[1i]");
 		text = text.replace(/(2(?!\]))/gi,"[2z]");
 		text = text.replace(/(3(?!\]))/gi,"[3з]");
