@@ -38,6 +38,13 @@ h1 {
 .output3 {
 	margin-top: 10px;
 }
+.input4 {
+	width: 100%;
+	height: 50px;
+}
+.output4 {
+	margin-top: 10px;
+}
 .lat {
 	color: red;
 }
