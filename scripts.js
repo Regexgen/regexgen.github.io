@@ -177,7 +177,7 @@ $(document).ready(function() {
 		text = text.replace(/(l(?!\]))/gi,"[lл]");
 		text = text.replace(/(m(?!\]))/gi,"[mм]");
 		text = text.replace(/(n(?!\]))/gi,"[nhн]");
-		text = text.replace(/(o(?!о0\]))/gi,"[oо0]");
+		text = text.replace(/(o(?!0\]))/gi,"[oо0]");
 		text = text.replace(/(p(?!\]))/gi,"[pрп]");
 		text = text.replace(/(q(?!\]))/gi,"q");
 		text = text.replace(/(r(?!\]))/gi,"[rгр]");
@@ -187,7 +187,7 @@ $(document).ready(function() {
 		text = text.replace(/(x(?!\]))/gi,"[xhх]");
 		text = text.replace(/(y(?!\]))/gi,"[yу]");
 		text = text.replace(/(z(?!\]))/gi,"[zз3]");
-		text = text.replace(/(0(?!оo\]))/gi,"[0оo]");
+		text = text.replace(/(0(?!\]))/gi,"[0оo]");
 		text = text.replace(/(1(?!\]))/gi,"[1i]");
 		text = text.replace(/(2(?!\]))/gi,"[2z]");
 		text = text.replace(/(3(?!\]))/gi,"[3з]");
