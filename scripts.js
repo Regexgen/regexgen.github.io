@@ -137,7 +137,7 @@ $(document).ready(function() {
 		text = text.replace(/(ё(?!\]))/gi,"[ёеe]");
 		text = text.replace(/(ж(?!\]))/gi,"[жj]");
 		text = text.replace(/(з(?!\]))/gi,"[з3]");
-		text = text.replace(/(и(?!\]))/giy,"[иui]");
+		text = text.replace(/(и(?!\]))/gi,"[иui]");
 		text = text.replace(/(й(?!\]))/gi,"[йиu]");
 		text = text.replace(/(к(?!\]))/gi,"[кk]");
 		text = text.replace(/(л(?!\]))/gi,"[лl]");
