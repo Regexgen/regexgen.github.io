@@ -128,9 +128,9 @@ $(document).ready(function() {
 	
 	function start4() {
 		var text = $('.input4').val();
-		text = text.replace(/(а(?!\]))/giy,"[аa]");
-		text = text.replace(/(б(?!\]))/giy,"[бb6]");
-		text = text.replace(/(в(?!\]))/giy,"[вb]");
+		text = text.replace(/(а(?!\]))/gi,"[аa]");
+		text = text.replace(/(б(?!6))/gi,"[бb6]");
+		text = text.replace(/(в(?!\]))/gi,"[вb]");
 		text = text.replace(/(г(?!\]))/gi,"[гr]");
 		text = text.replace(/(д(?!\]))/gi,"[дd]");
 		text = text.replace(/(е(?!\]))/gi,"[еe]");
