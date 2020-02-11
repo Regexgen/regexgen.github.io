@@ -118,7 +118,7 @@ $(document).ready(function() {
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
 		text = text.replace(/\)/gi,"<span class='fo'>)</span>");
-		text = text.replace(/( (?!class\=))/gi,"<span class='one'>($1)?</span>");
+		text = text.replace(/( (?!class\=))/gi,"<span class='one'>$1</span>");
 		text = text.replace(/(\n(?!class\=))/gi,"<br />");
 		$('.output3').html(text);
 	}	
