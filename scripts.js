@@ -49,7 +49,7 @@ $(document).ready(function() {
 		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/( (?!class\=))/gi,"<span class='one'>($1)?</span>");
-		text = text.replace(/(\n(?!class\=))/gi,"<span class='tri'></span><br />");
+		text = text.replace(/(\n(?!class\=))/gi,"<br />");
 		$('.output').html(text);
 	}	
 	start1();
@@ -98,7 +98,7 @@ $(document).ready(function() {
 		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/( (?!class\=))/gi,"<span class='one'>($1)?</span>");
-		text = text.replace(/(\n(?!class\=))/gi,"<span class='tri'></span><br />");
+		text = text.replace(/(\n(?!class\=))/gi,"<br />");
 		$('.output2').html(text);
 	}	
 	start2();
@@ -119,7 +119,7 @@ $(document).ready(function() {
 		text = text.replace(/\(/gi,"<span class='fo'>(</span>");
 		text = text.replace(/\)/gi,"<span class='fo'>)</span>");
 		text = text.replace(/( (?!class\=))/gi,"<span class='one'>($1)?</span>");
-		text = text.replace(/(\n(?!class\=))/gi,"<span class='tri'></span><br />");
+		text = text.replace(/(\n(?!class\=))/gi,"<br />");
 		$('.output3').html(text);
 	}	
 	start3();
@@ -201,7 +201,7 @@ $(document).ready(function() {
 		text = text.replace(/([А-Яё])/gi,"<span class='cyr'>$1</span>");
 		text = text.replace(/([0-9])/gi,"<span class='nam'>$1</span>");
 		text = text.replace(/( (?!class\=))/gi,"<span class='one'>($1)?</span>");
-		text = text.replace(/(\n(?!class\=))/gi,"<span class='tri'></span><br />");
+		text = text.replace(/(\n(?!class\=))/gi,"<br />");
 		text = text.replace(/\|/gi,"<span class='tri'>|</span>");
 		$('.output4').html(text);
 	}	
