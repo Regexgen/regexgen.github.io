@@ -63,8 +63,8 @@ $(document).ready(function() {
 		var text = $('.input2').val();
 		text = text.replace(/(a)/gi,"[aа]");
 		text = text.replace(/(b(?!\]))/gi,"[bбь6]");
-		text = text.replace(/(s)/gi,"[sсc]");
-		text = text.replace(/(c(?!s\]|с\]))/gi,"[csс]");
+		text = text.replace(/(s)/gi,"[scс]");
+		text = text.replace(/(c(?!с\]))/gi,"[csс]");
 		text = text.replace(/(d)/gi,"[dд]");
 		text = text.replace(/(e)/gi,"[eе]");
 		text = text.replace(/(f)/gi,"[fф]");
