@@ -63,7 +63,7 @@ $(document).ready(function() {
 		var text = $('.input2').val();
 		text = text.replace(/(a)/gi,"[aа]");
 		text = text.replace(/(b(?!\]))/gi,"[bбь6]");
-		text = text.replace(/(s)/gi,"[sс]");
+		text = text.replace(/(s)/gi,"[sсc]");
 		text = text.replace(/(c)/gi,"[csс]");
 		text = text.replace(/(d)/gi,"[dд]");
 		text = text.replace(/(e)/gi,"[eе]");
@@ -78,8 +78,8 @@ $(document).ready(function() {
 		text = text.replace(/(m)/gi,"[mм]");
 		text = text.replace(/(n)/gi,"[nhн]");
 		text = text.replace(/(o(?!\]))/gi,"[oо0]");
-		text = text.replace(/(p)/gi,"[pрп]");
-		text = text.replace(/(q)/gi,"q");
+		text = text.replace(/(p)/gi,"[pрпn]");
+		text = text.replace(/(q)/gi,"[qg]");
 		text = text.replace(/(r)/gi,"[rгр]");
 		text = text.replace(/(t)/gi,"[tmт]");
 		text = text.replace(/(v)/gi,"[vв]");
@@ -166,7 +166,7 @@ $(document).ready(function() {
 		text = text.replace(/(я(?!\]))/gi,"я");
 		text = text.replace(/(a(?!\]))/gi,"[aа]");
 		text = text.replace(/(b(?!6\]|i\)|\)|\]))/gi,"[bбь6]");
-		text = text.replace(/(s(?!\]))/gi,"[sс]");
+		text = text.replace(/(s(?!\]))/gi,"[scс]");
 		text = text.replace(/(c(?!s\]))/gi,"[csс]");
 		text = text.replace(/(d(?!\]))/gi,"[dд]");
 		text = text.replace(/(e(?!\]))/gi,"[eе]");
@@ -181,8 +181,8 @@ $(document).ready(function() {
 		text = text.replace(/(m(?!\]))/gi,"[mм]");
 		text = text.replace(/(n(?!\]))/gi,"[nhн]");
 		text = text.replace(/(o(?!0\]|\)))/gi,"[oо0]");
-		text = text.replace(/(p(?!\]))/gi,"[pрп]");
-		text = text.replace(/(q(?!\]))/gi,"q");
+		text = text.replace(/(p(?!\]))/gi,"[pрпn]");
+		text = text.replace(/(q(?!\]))/gi,"[qg]");
 		text = text.replace(/(r(?!\]))/gi,"[rгр]");
 		text = text.replace(/(t(?!m\]))/gi,"[tmт]");
 		text = text.replace(/(v(?!\]))/gi,"[vв]");
