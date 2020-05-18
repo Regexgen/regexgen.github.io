@@ -417,8 +417,7 @@ const rules = {
 
     'Блок дополнительных вознаграждений': {
         'Текст бэйджа': {
-            '_c.retailer.includes("Bonus")': `<div class="bun__badge">Бонус {5}%</div>
-`,
+            '_c.retailer.includes("Bonus")': '<div class="bun__badge">Бонус {5}%</div>\n'
         },
         'Полные условия': {
 			'_c.retailer.includes("Bonus")': {
@@ -426,14 +425,16 @@ const rules = {
                                         \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id}.png">
                                         \t<div class="bun__title">Дополнительный кэшбэк {5}%</div>
                                         \t<div class="bun__description">При покупке в сети «{Магнит}».</div>
-                                        </div>`,
+                                        </div>
+										`,
 				'retailer.anyWithBonusSeveral': `<div class="bun">
                                         \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id}.png">
                                         \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id}.png">
                                         \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id}.png">
                                         \t<div class="bun__title">Дополнительный кэшбэк {5}%</div>
                                         \t<div class="bun__description">При покупке в сетях {«Магнит», «Пятёрочка» или «Дикси»}.</div>
-                                        </div>`,
+                                        </div>
+										`,
 				_comment: `${wikiLink('Логотипы', 'cashback-product/cashbackcontent/Logotipy/')}`
 			}
         }
