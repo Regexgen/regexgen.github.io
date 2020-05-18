@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Генератор кэшбэков</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .btn[data-toggle="collapse"] {
+            font-weight: bold;
+            padding-left: 0;
+        }
+
+        .btn[aria-expanded="true"]::before {
+            content: "▲";
+        }
+
+        .btn:not([aria-expanded="true"])::before {
+            content: "▼";
+        }
+
+        #campaign-settings {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 24px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .col-md {
+            max-width: 834px;
+        }
+
+        mark {
+            padding: .2em 0;
+            background-color: #FFDB4C;
+        }
+
+        .question {
+            margin-bottom: 2em;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        #campaign-settings div.show {
+            overflow: auto;
+        }
+
+        .fieldValue {
+            -webkit-user-select: all;
+            -moz-user-select: all;
+            -ms-user-select: all;
+            user-select: all;  
+        }
+
+        .copy-only {
+            font-size: 0;
+        }
+
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+    <div id="app" class="container-fluid">
+        <div class="row m-4">
+            <div class="col-md-4 mr-4">
+                <campaign-settings v-bind:campaign="campaign"></campaign-settings>
+            </div>
+            <div class="col-md">
+                <h1 class="mb-5">Генератор текста для кэшбэков</h1>
+                <p>Заполняя все поля, следуйте <a href="https://wiki.yandex-team.ru/edadeal/texts/">редакционной политике Едадила</a>.</p>
+                <results v-bind:campaign="campaign"></results>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="./campaignsettings.js?7"></script>
+    <script src="./rules.js?10"></script>
+    <script src="./campaigngen.js?3"></script>
+</body>
+
+</html>
