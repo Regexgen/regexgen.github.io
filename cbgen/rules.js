@@ -11,8 +11,8 @@ const rules = {
 					_else: '{Соус Помидорка}',
                     _comment: `Вес, вкус, упаковку, объем по возможности указываем прямо в названии.
                                 Говорим живым языком, например, «Любое пиво» вместо «Пиво любое».
-                                Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', '#quotemarks')}.
-                                ${wikiLink('Правила написания брендов', '#brandnames')}`
+                                Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', 'texts/#quotemarks')}.
+                                ${wikiLink('Правила написания брендов', 'texts/#brandnames')}`
                 },
                 'skuFeatures.minSum': 'Купите',
 				_else: 'Сделайте любую покупку'
@@ -70,7 +70,7 @@ const rules = {
                     'skuFeatures.exclusions': {
                         _value: '\t<li>{Кроме бутылок 6 л и 18,9 л}</li>\n',
                         _comment: `В условиях указываем исключения. Характеристики товара по возможности пишем прямо в названии акции.
-                                    Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', '#quotemarks')}.`
+                                    Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', 'texts/#quotemarks')}.`
                     }
                 },
                 {
@@ -106,11 +106,11 @@ const rules = {
                     '_c.retailer == "chosenWithConsolation" && _c.promoPrices == "promoConsolation"': {
                         _value: `\t<li class="small">При покупке в других сетях или со скидкой в {Перекрестке — 1%}</li>
                                 \t<li class="big">При покупке в других сетях или со скидкой в {Перекрестке (до 55 ₽ за шт.) — 1%}</li>\n`,
-                        _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', '#quotemarks')}.`
+                        _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', 'texts/#quotemarks')}.`
                     },
                     '_c.retailer == "chosenWithConsolation" && _c.promoPrices == "promoConsolationSeveral"': {
                         _value: '\t<li>При покупке в других сетях или со скидкой в {Перекрестке — 1%}</li>\n',
-                        _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', '#quotemarks')}.`
+                        _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', 'texts/#quotemarks')}.`
                     },
                     'retailer.chosenWithConsolation': '\t<li>В других сетях — {1%}</li>\n',
                     'promoPrices.promoConsolation': `\t<li class="small">При покупке со скидкой — {1%}</li>
@@ -160,7 +160,7 @@ const rules = {
                             },
                             'placeholderDescription.productLineDescription': {
                                 _value: `\t<li>{Шоколадный, яблочный, банановый}</li>\n`,
-                                _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', '#quotemarks')}.`
+                                _comment: `Кавычки в маленькой карточке не ставим, но есть ${wikiLink('исключения', 'texts/#quotemarks')}.`
                             },
                             _else: {
                                 'accumulationType.milestones': '\t<li class="small">Чем больше покупок, тем выше кэшбэк</li>\n',
@@ -434,13 +434,13 @@ const rules = {
                                         \t<div class="bun__description">При покупке в сетях {«Магнит», «Пятёрочка» или «Дикси»}.</div>
                                         </div>
                                         `,
-		_comment: '<a href=">https://wiki.yandex-team.ru/edadeal/cashback-product/cashbackcontent/Logotipy/">Логотипы</a>'
+			_comment: `${wikiLink('Логотипы', 'cashback-product/cashbackcontent/Logotipy/')}`
         }
     }
 
 }
 
 function wikiLink(text, relPath) {
-	const rootPath = 'https://wiki.yandex-team.ru/edadeal/texts/'
+	const rootPath = 'https://wiki.yandex-team.ru/edadeal/'
 	return `<a href='${rootPath + relPath}' target='_blank'>${text}</a>`
 }
