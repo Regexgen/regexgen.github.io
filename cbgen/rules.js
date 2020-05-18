@@ -421,19 +421,20 @@ const rules = {
         },
         'Полные условия': {
             'retailer.anyWithBonusOne': `<div class="bun">
-                                        \t<img src="https://yastatic.net/s3/edadeal-public-static/retailers/icons/144x144/ret_{id ритейлера}.png">
+                                        \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id ритейлера}.png">
                                         \t<div class="bun__title">Дополнительный кэшбэк {5}%</div>
                                         \t<div class="bun__description">При покупке в сети «{Магнит}».</div>
                                         </div>
                                         `,
             'retailer.anyWithBonusSeveral': `<div class="bun">
-                                        \t<img src="https://yastatic.net/s3/edadeal-public-static/retailers/icons/144x144/ret_{id ритейлера}.png">
-                                        \t<img src="https://yastatic.net/s3/edadeal-public-static/retailers/icons/144x144/ret_{id ритейлера}.png">
-                                        \t<img src="https://yastatic.net/s3/edadeal-public-static/retailers/icons/144x144/ret_{id ритейлера}.png">
+                                        \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id ритейлера}.png">
+                                        \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id ритейлера}.png">
+                                        \t<img src="https://leonardo.edadeal.io/dyn/re/retailers/images/icons/sq/ret_{id ритейлера}.png">
                                         \t<div class="bun__title">Дополнительный кэшбэк {5}%</div>
                                         \t<div class="bun__description">При покупке в сетях {«Магнит», «Пятёрочка» или «Дикси»}.</div>
                                         </div>
                                         `,
+		_comment: '<a href=">https://wiki.yandex-team.ru/edadeal/cashback-product/cashbackcontent/Logotipy/">Логотипы</a>'
         }
     }
 
