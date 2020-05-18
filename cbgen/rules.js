@@ -321,10 +321,12 @@ const rules = {
             {
                 'limits.amountPerReceipt': '\t<li>Засчитывается до {3} шт. в чеке.</li>\n'
             },
+			 {
+				'_c.accumulationType == "milestones" && _c.rewardUnit == "percents"':'\t<li>Максимальная выплата — {X} ₽.</li>\n'
+			},
             {
                 '_c.limits.includes("perDay") && _c.limits.includes("perMonth")': '\t<li>До {3} чеков в сутки, до {12} в месяц.</li>\n',
                 'limits.perMonth': '\t<li>До {8} чеков в месяц.</li>\n',
-                '_c.accumulationType == "milestones" && _c.rewardUnit == "percents"':'\t<li>Максимальная выплата — {X} ₽.</li>\n',
                 'limits.perDay': '\t<li>До {3} чеков в сутки.</li>\n'
             },
             '\t<li>Бюджет акции ограничен.</li>\n',
