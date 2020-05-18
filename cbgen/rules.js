@@ -417,8 +417,8 @@ const rules = {
 
     'Блок дополнительных вознаграждений': {
         'Текст бэйджа': {
-            '_c.retailer.includes("Bonus")': `<div class="bun__badge">Бонус {5}%</div>`,
-			
+            '_c.retailer.includes("Bonus")': `<div class="bun__badge">Бонус {5}%</div>
+`,
         },
         'Полные условия': {
 			'_c.retailer.includes("Bonus")': {
